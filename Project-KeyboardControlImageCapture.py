@@ -30,7 +30,7 @@ def getKeyboardInput():
 
     if kp.getKey("q"): yv = me.land(); time.sleep(3)
     if kp.getKey("e"): me.takeoff()
-
+    #when z pressed picture is taken and saved to file
     if kp.getKey("z"):
         cv2.imwrite(f'Resources/Images/{time.time()}.jpg', img)
         time.sleep(0.3)
